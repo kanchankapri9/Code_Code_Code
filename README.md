@@ -1,36 +1,37 @@
 <div align="center">
 
-# Hey, Welcome to My Coding Solutions
+# 🧠 Coding Solutions
 
-![Total Solved_ji](https://img.shields.io/badge/Total_Solved-1-blue?style=for-the-badge)
-![Streak till now ji](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
-![Last Updated ji](https://img.shields.io/badge/Last_Synced-7--12--2026-green?style=for-the-badge)
+![Total Solved](https://img.shields.io/badge/Total_Solved-2-blue?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
+![Last Synced](https://img.shields.io/badge/Last_Synced-7--12--2026-green?style=for-the-badge)
 
-> 
+> 🚀 Auto-synced by [**PushMyCode**](https://github.com/PushMyCode-HQ) — solve it, forget it, it's on GitHub.
 
 </div>
 
 ---
 
-##  Stats
+## 📊 Stats
 
 | Difficulty | Solved |
 |:---:|:---:|
-| 🟢 Easy | **1** |
+| 🟢 Easy | **2** |
 | 🟡 Medium | **0** |
 | 🔴 Hard | **0** |
-| **Total** | **1** |
+| **Total** | **2** |
 
-##  Languages
+## 🛠️ Languages
 
 | Language | Solutions |
 |:---:|:---:|
+| C++ | **1** |
 | Java | **1** |
 
-##  Repository Structure
+## 📂 Repository Structure
 
 ```
- coding-solutions/
+📦 coding-solutions/
 ├── leetcode/
 │   ├── easy/
 │   ├── medium/
@@ -44,6 +45,6 @@
 
 <div align="center">
 
-*Last updated: 2026-07-12* ·
+*Last updated: 2026-07-12* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
 
 </div>
