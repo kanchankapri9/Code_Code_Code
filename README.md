@@ -21,7 +21,7 @@
 | 🔴 Hard | **0** |
 | **Total** | **1** |
 
-## 🛠️ Languages
+##  Languages
 
 | Language | Solutions |
 |:---:|:---:|
