@@ -1,46 +1,47 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+
+// for (int i = 0; i<=n; i++) {
+//     cout << n * i << endl;
+// }
 
 
-class Person{
-    public:
-        int age;
-        Person(int initialAge);  // constructor
-        void amIOld(); // foloowing operations
-        void yearPasses();  // increses age by 1
-    };
-    
-    
-        Person::Person(int initialAge){
-        // Add some more code to run some checks on initialAge
-        // asign initial age by confirming checks
-        if( initialAge >= 0) {
-        age = initialAge;
 
-        } else {
-            cout << "Age is not valid, setting age to 0." << endl;
-            age = 0;
-        }
+int main()
+{
+    string n_temp;
+    getline(cin, n_temp);
+
+    int n = stoi(ltrim(rtrim(n_temp)));
+    for (int i = 1; i <= 10; i++) {
+        cout << n << " x " << i << " = " << n * i << endl;
     }
 
-    void Person::amIOld(){
-        // Do some computations in here and print out the correct statement to the console
-        if ( age < 13) {
-            cout << "You are young." << endl;
-        } else if ( age < 18  ) {
-            cout << "You are a teenager." << endl;
-            
-        } else {
-            cout << "You are old." << endl;
-            
-        }
+    return 0;
+}
 
-    }
+string ltrim(const string &str) {
+    string s(str);
 
-    void Person::yearPasses(){
-        // Increment the age of the person in here
-     age++;
-    }
-    
-    
-    //=====================================
+    s.erase(
+        s.begin(),
+        find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
+    );
 
-    
+    return s;
+}
+
+string rtrim(const string &str) {
+    string s(str);
+
+    s.erase(
+        find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
+        s.end()
+    );
+
+    return s;
+}
