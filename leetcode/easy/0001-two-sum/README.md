@@ -52,29 +52,25 @@ Output: [0,1]
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 37 ms (beats 28.80%)  
-**Memory:** 14.1 MB (beats 68.89%)  
-**Submitted:** 2026-07-12T18:09:38.566Z  
+**Language:** Java  
+**Runtime:** 38 ms (beats 40.97%)  
+**Memory:** 47.1 MB (beats 40.26%)  
+**Submitted:** 2026-07-22T18:12:53.869Z  
 
-```cpp
+```java
 class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        int n = nums.size();
-        for(int i=0; i<n; i++) {
+    public int[] twoSum(int[] nums, int target) {
+        int n = nums.length;
+        for(int i = 0; i<n; i++) {
             for(int j = i+1; j<n; j++) {
                 if(nums[i] + nums[j] == target) {
-                    return {i,j};
+                    return new int[]{i,j};
                 }
             }
         }
-    return {-1};
+        return new int []{};
     }
-};
-
-
-
+}
 ```
 
 ---
