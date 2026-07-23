@@ -71,20 +71,14 @@ Since both Person 1 and Person 2 reach Person 3 at the same time, the output is 
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.7 MB (beats 22.86%)  
-**Submitted:** 2026-07-23T18:29:39.606Z  
+**Memory:** 8.6 MB (beats 56.30%)  
+**Submitted:** 2026-07-23T18:30:00.956Z  
 
 ```cpp
 class Solution {
 public:
     int findClosest(int x, int y, int z) {
-        // home -- collge
-        // same position -- to_real_home
-        // distance formula 
-        // Compare the distances from Persons 1 and 2 to Person 3 to determine the answer.
-        // ghar --> l1 - 4km  
-        // same road --> 2l - 10 km
-        // p1 - p2 
+        
         int dist1 = abs(x-z);
         int dist2 = abs(y-z);
 
