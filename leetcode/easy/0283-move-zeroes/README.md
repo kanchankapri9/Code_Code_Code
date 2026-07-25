@@ -41,24 +41,32 @@ Output: [0]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.8 MB (beats 83.27%)  
-**Submitted:** 2026-07-24T18:03:48.856Z  
+**Memory:** 23.8 MB (beats 56.53%)  
+**Submitted:** 2026-07-25T16:15:46.868Z  
 
 ```cpp
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int lastNonZeroFoundAt = 0; // pointer to track position for next non-zero
+        int next = 0; // pointer to track position for next non-zero
 
         for (int i = 0; i < nums.size(); i++) {
             if (nums[i] != 0) {
-                // swap current non-zero with the element at lastNonZeroFoundAt
-                swap(nums[lastNonZeroFoundAt], nums[i]);
-                lastNonZeroFoundAt++;
+                // swap current non-zero with the element at 
+                                              
+               nums[next] = nums[i];  
+               next++;         
             }
+        }
+
+        while(next < nums.size()) {
+          nums[next] = 0;
+          next++;
         }
     }
 };
+
+
 
 ```
 
