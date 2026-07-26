@@ -5,18 +5,14 @@ public:
 
         for (int i = 0; i < nums.size(); i++) {
             if (nums[i] != 0) {
-                // swap current non-zero with the element at 
-                                              
-               nums[next] = nums[i];  
+                swap(nums[next], nums[i]);
                next++;         
             }
         }
 
-        while(next < nums.size()) {
-          nums[next] = 0;
-          next++;
-        }
+        // while(next < nums.size()) {
+        //   nums[next] = 0;   // next at the index of 3 where non zero ending now will have 0
+        //   next++;
+        // }
     }
 };
-
-
