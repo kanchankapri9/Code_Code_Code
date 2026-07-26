@@ -41,8 +41,8 @@ Output: [0]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.8 MB (beats 56.53%)  
-**Submitted:** 2026-07-25T16:15:46.868Z  
+**Memory:** 23.8 MB (beats 56.59%)  
+**Submitted:** 2026-07-26T05:54:35.911Z  
 
 ```cpp
 class Solution {
@@ -52,22 +52,17 @@ public:
 
         for (int i = 0; i < nums.size(); i++) {
             if (nums[i] != 0) {
-                // swap current non-zero with the element at 
-                                              
-               nums[next] = nums[i];  
+                swap(nums[next], nums[i]);
                next++;         
             }
         }
 
-        while(next < nums.size()) {
-          nums[next] = 0;
-          next++;
-        }
+        // while(next < nums.size()) {
+        //   nums[next] = 0;   // next at the index of 3 where non zero ending now will have 0
+        //   next++;
+        // }
     }
 };
-
-
-
 ```
 
 ---
