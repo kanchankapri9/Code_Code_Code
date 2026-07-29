@@ -9,13 +9,13 @@ public:
             int digitCount = 0;   // removals times tracks == the numbers in the digit
             int temp = num;  // temp for  num
 
-            while (temp != 0) {
-                temp = temp / 10;
-                digitCount++;
+            while (temp != 0) {  // till each digits's numbers become 0
+                temp = temp / 10;   // remove last dgit
+                digitCount++;   // increse count
             }
 
-            if (digitCount % 2 == 0) {
-                count++;
+            if (digitCount % 2 == 0) {   // check even
+                count++;   // increse the count
             }
         }
 
