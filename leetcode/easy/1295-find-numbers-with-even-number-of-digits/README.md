@@ -45,7 +45,7 @@ Only 1771 contains an even number of digits.
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 13.3 MB (beats 88.63%)  
-**Submitted:** 2026-07-29T18:28:58.480Z  
+**Submitted:** 2026-07-29T18:30:07.526Z  
 
 ```cpp
 class Solution {
@@ -59,13 +59,13 @@ public:
             int digitCount = 0;   // removals times tracks == the numbers in the digit
             int temp = num;  // temp for  num
 
-            while (temp != 0) {
-                temp = temp / 10;
-                digitCount++;
+            while (temp != 0) {  // till each digits's numbers become 0
+                temp = temp / 10;   // remove last dgit
+                digitCount++;   // increse count
             }
 
-            if (digitCount % 2 == 0) {
-                count++;
+            if (digitCount % 2 == 0) {   // check even
+                count++;   // increse the count
             }
         }
 
