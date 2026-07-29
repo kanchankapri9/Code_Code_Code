@@ -44,8 +44,8 @@ Only 1771 contains an even number of digits.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 13.3 MB (beats 66.91%)  
-**Submitted:** 2026-07-29T18:28:35.412Z  
+**Memory:** 13.3 MB (beats 88.63%)  
+**Submitted:** 2026-07-29T18:28:58.480Z  
 
 ```cpp
 class Solution {
