@@ -3,7 +3,7 @@ public:
     int maxProfit(vector<int>& prices) {
         // lowest price to buy 
         // highest price to sell
-        // if(prices[i])
+       
 
         int minPrice = prices[0];
         int maxProfit = 0;
