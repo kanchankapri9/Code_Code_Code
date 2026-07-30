@@ -42,8 +42,8 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 97.2 MB (beats 99.55%)  
-**Submitted:** 2026-07-30T16:50:52.566Z  
+**Memory:** 97.4 MB (beats 25.87%)  
+**Submitted:** 2026-07-30T16:51:11.912Z  
 
 ```cpp
 class Solution {
@@ -51,7 +51,7 @@ public:
     int maxProfit(vector<int>& prices) {
         // lowest price to buy 
         // highest price to sell
-        // if(prices[i])
+       
 
         int minPrice = prices[0];
         int maxProfit = 0;
