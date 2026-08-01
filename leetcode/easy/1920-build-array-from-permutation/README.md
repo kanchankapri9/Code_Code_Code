@@ -47,9 +47,9 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.5 MB  
-**Submitted:** 2026-08-01T17:25:01.082Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 20.3 MB (beats 83.22%)  
+**Submitted:** 2026-08-01T17:25:05.698Z  
 
 ```cpp
 class Solution {
