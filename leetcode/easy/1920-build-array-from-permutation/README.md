@@ -48,8 +48,8 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 20.3 MB (beats 83.22%)  
-**Submitted:** 2026-08-01T17:25:05.698Z  
+**Memory:** 20.5 MB (beats 63.82%)  
+**Submitted:** 2026-08-01T17:26:56.733Z  
 
 ```cpp
 class Solution {
