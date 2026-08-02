@@ -52,16 +52,15 @@ Choosing `i = 0` and `j = 1` gives strength `(3 * 3) / gcd(3, 3)2 = 9 / 9 = 1`, 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-08-02T17:17:22.861Z  
+**Runtime:** 747 ms (beats 72.58%)  
+**Memory:** 37.1 MB (beats 18.52%)  
+**Submitted:** 2026-08-02T17:19:15.968Z  
 
 ```cpp
 class Solution {
 public:
     long long maxPairStrength(vector<int>& nums) {
-        // nums[i] * nums[j] / gcd(nums[i, nums[j]]2)
-        // gcd = greatest common divisor of nums[i,j]
+        
          long long ans = 0;
         int n = nums.size();
 
@@ -82,6 +81,11 @@ public:
 
     }
 };
+
+
+
+// nums[i] * nums[j] / gcd(nums[i, nums[j]]2)
+        // gcd = greatest common divisor of nums[i,j]
 
 
 
