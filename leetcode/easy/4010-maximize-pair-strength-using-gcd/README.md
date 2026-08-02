@@ -52,9 +52,9 @@ Choosing `i = 0` and `j = 1` gives strength `(3 * 3) / gcd(3, 3)2 = 9 / 9 = 1`, 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 753 ms (beats 65.41%)  
-**Memory:** 37.2 MB (beats 18.52%)  
-**Submitted:** 2026-08-02T17:17:14.049Z  
+**Runtime:** 0 ms  
+**Memory:** 8.3 MB  
+**Submitted:** 2026-08-02T17:17:22.861Z  
 
 ```cpp
 class Solution {
