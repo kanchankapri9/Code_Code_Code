@@ -1,8 +1,7 @@
 class Solution {
 public:
     long long maxPairStrength(vector<int>& nums) {
-        // nums[i] * nums[j] / gcd(nums[i, nums[j]]2)
-        // gcd = greatest common divisor of nums[i,j]
+        
          long long ans = 0;
         int n = nums.size();
 
@@ -23,5 +22,10 @@ public:
 
     }
 };
+
+
+
+// nums[i] * nums[j] / gcd(nums[i, nums[j]]2)
+        // gcd = greatest common divisor of nums[i,j]
 
 
