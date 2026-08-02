@@ -47,9 +47,9 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 20.5 MB (beats 63.82%)  
-**Submitted:** 2026-08-01T17:26:56.733Z  
+**Runtime:** 0 ms  
+**Memory:** 8.1 MB  
+**Submitted:** 2026-08-01T17:25:19.207Z  
 
 ```cpp
 class Solution {
@@ -60,7 +60,7 @@ public:
         vector<int> ans(n);
 
         for (int i = 0; i < n; i++) {
-            ans[i] = nums[nums[i]];
+            ans[i] = i;
         }
 
         return ans;
