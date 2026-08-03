@@ -59,8 +59,8 @@ The third distinct maximum is 1.
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 12.8 MB (beats 93.55%)  
-**Submitted:** 2026-08-03T16:54:19.806Z  
+**Memory:** 13 MB (beats 47.01%)  
+**Submitted:** 2026-08-03T16:55:34.797Z  
 
 ```cpp
 class Solution {
