@@ -55,52 +55,29 @@ The smallest integer is 1 and the largest is 5, so the full range should be `[1,
 
 **Language:** C++  
 **Runtime:** 3 ms (beats 49.33%)  
-**Memory:** 32.3 MB (beats 54.61%)  
-**Submitted:** 2026-08-04T17:54:34.245Z  
+**Memory:** 33.6 MB (beats 36.53%)  
+**Submitted:** 2026-08-04T17:56:13.040Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> findMissingElements(vector<int>& nums) {
+        vector<int> ans; // empty array ( vector ans)
 
-        vector<int> ans;
+        int mn = *min_element(nums.begin(), nums.end());   //min
+        int mx = *max_element(nums.begin(), nums.end());   // max
 
-        int mn = nums[0];
-        int mx = nums[0];
+        unordered_set<int> st(nums.begin(), nums.end());
 
-        // Find minnu and mixu
-        for (int i = 1; i < nums.size(); i++) {
-
-            if (nums[i] < mn)
-                mn = nums[i];
-
-            if (nums[i] > mx)
-                mx = nums[i];
-        }
-
-        // Check 
-        for (int num = mn; num <= mx; num++) {   // start = min end = max
-
-            bool found = false;
-
-            // Search 
-            for (int j = 0; j < nums.size(); j++) {
-
-                if (nums[j] == num) {
-
-                    found = true;
-                    break;
-                }
+        for (int i = mn; i <= mx; i++) {
+            if (st.find(i) == st.end()) {
+                ans.push_back(i);
             }
-
-            if (!found)
-                ans.push_back(num);
         }
 
         return ans;
     }
 };
-
 ```
 
 ---
