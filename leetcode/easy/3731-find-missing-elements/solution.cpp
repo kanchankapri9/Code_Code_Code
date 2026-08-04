@@ -1,39 +1,17 @@
 class Solution {
 public:
     vector<int> findMissingElements(vector<int>& nums) {
+        vector<int> ans; // empty array ( vector ans)
 
-        vector<int> ans;
+        int mn = *min_element(nums.begin(), nums.end());   //min
+        int mx = *max_element(nums.begin(), nums.end());   // max
 
-        int mn = nums[0];
-        int mx = nums[0];
+        unordered_set<int> st(nums.begin(), nums.end());
 
-        // Find minnu and mixu
-        for (int i = 1; i < nums.size(); i++) {
-
-            if (nums[i] < mn)
-                mn = nums[i];
-
-            if (nums[i] > mx)
-                mx = nums[i];
-        }
-
-        // Check 
-        for (int num = mn; num <= mx; num++) {   // start = min end = max
-
-            bool found = false;
-
-            // Search 
-            for (int j = 0; j < nums.size(); j++) {
-
-                if (nums[j] == num) {
-
-                    found = true;
-                    break;
-                }
+        for (int i = mn; i <= mx; i++) {
+            if (st.find(i) == st.end()) {
+                ans.push_back(i);
             }
-
-            if (!found)
-                ans.push_back(num);
         }
 
         return ans;
