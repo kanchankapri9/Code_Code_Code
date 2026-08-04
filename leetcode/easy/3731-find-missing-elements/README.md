@@ -53,50 +53,54 @@ The smallest integer is 1 and the largest is 5, so the full range should be `[1,
 
 ## Solution
 
-**Language:** Java  
-**Runtime:** 2 ms (beats 91.99%)  
-**Memory:** 47.1 MB (beats 33.52%)  
-**Submitted:** 2026-08-04T17:53:15.061Z  
+**Language:** C++  
+**Runtime:** 3 ms (beats 49.33%)  
+**Memory:** 32.3 MB (beats 54.61%)  
+**Submitted:** 2026-08-04T17:54:34.245Z  
 
-```java
+```cpp
 class Solution {
+public:
+    vector<int> findMissingElements(vector<int>& nums) {
 
-    public List<Integer> findMissingElements(int[] nums) {
+        vector<int> ans;
 
-        List<Integer> ans = new ArrayList<>();
+        int mn = nums[0];
+        int mx = nums[0];
 
-        int mannu = nums[0];
-        int mixu = nums[0];
+        // Find minnu and mixu
+        for (int i = 1; i < nums.size(); i++) {
 
-        for(int i=1;i<nums.length;i++){
+            if (nums[i] < mn)
+                mn = nums[i];
 
-            if(nums[i]<mannu)
-                mannu=nums[i];
-
-            if(nums[i]>mixu)
-                mixu=nums[i];
+            if (nums[i] > mx)
+                mx = nums[i];
         }
 
-        for(int num=mannu;num<=mixu;num++){
+        // Check 
+        for (int num = mn; num <= mx; num++) {   // start = min end = max
 
-            boolean found=false;
+            bool found = false;
 
-            for(int j=0;j<nums.length;j++){
+            // Search 
+            for (int j = 0; j < nums.size(); j++) {
 
-                if(nums[j]==num){
+                if (nums[j] == num) {
 
-                    found=true;
+                    found = true;
                     break;
                 }
             }
 
-            if(!found)
-                ans.add(num);
+            if (!found)
+                ans.push_back(num);
         }
 
         return ans;
     }
-}
+};
+
 ```
 
 ---
