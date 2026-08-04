@@ -55,8 +55,8 @@ The smallest integer is 1 and the largest is 5, so the full range should be `[1,
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 91.99%)  
-**Memory:** 47 MB (beats 33.52%)  
-**Submitted:** 2026-08-04T17:53:05.538Z  
+**Memory:** 47.1 MB (beats 33.52%)  
+**Submitted:** 2026-08-04T17:53:15.061Z  
 
 ```java
 class Solution {
