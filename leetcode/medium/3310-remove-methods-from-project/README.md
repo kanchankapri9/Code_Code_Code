@@ -61,9 +61,9 @@ All methods are suspicious. We can remove them.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 153 ms (beats 92.41%)  
-**Memory:** 305.8 MB (beats 68.97%)  
-**Submitted:** 2026-08-05T16:51:32.712Z  
+**Runtime:** 164 ms (beats 81.03%)  
+**Memory:** 305.9 MB (beats 68.97%)  
+**Submitted:** 2026-08-05T16:51:43.699Z  
 
 ```cpp
 class Solution {
