@@ -54,9 +54,9 @@ The smallest integer is 1 and the largest is 5, so the full range should be `[1,
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 49.33%)  
-**Memory:** 33.6 MB (beats 36.53%)  
-**Submitted:** 2026-08-04T17:56:13.040Z  
+**Runtime:** 0 ms  
+**Memory:** 8.5 MB  
+**Submitted:** 2026-08-04T17:56:19.810Z  
 
 ```cpp
 class Solution {
