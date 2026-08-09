@@ -45,25 +45,23 @@ Output: [3,4,6,16,17]
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 12.5 MB (beats 53.82%)  
-**Submitted:** 2026-07-25T17:10:09.095Z  
+**Memory:** 12.5 MB (beats 53.77%)  
+**Submitted:** 2026-08-09T17:19:00.119Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> runningSum(vector<int>& nums) {
-    // int sum = 0;
-    for (int i = 1; i < nums.size(); i++) {
-            nums[i] += nums[i - 1];
+        // int per = nums[0];
+        for(int i = 1; i<nums.size(); i++ ) {
+            // nums[i] += per;
+           nums[i] += nums[i-1];
+            // per = nums[0] + nums[1];
+            
         }
         return nums;
     }
 };
-
-
-// 1+ 1+2+ 1+2+3
-
-// 
 ```
 
 ---
