@@ -62,7 +62,7 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 12.4 MB (beats 31.71%)  
-**Submitted:** 2026-08-09T17:33:10.903Z  
+**Submitted:** 2026-08-09T17:33:59.334Z  
 
 ```cpp
 class Solution {
