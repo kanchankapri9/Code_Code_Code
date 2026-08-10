@@ -44,9 +44,9 @@ Explanation: The array ans is formed as follows:
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 16.8 MB (beats 81.80%)  
-**Submitted:** 2026-08-10T18:29:58.444Z  
+**Runtime:** 0 ms  
+**Memory:** 8.4 MB  
+**Submitted:** 2026-08-10T18:30:13.271Z  
 
 ```cpp
 class Solution {
