@@ -66,9 +66,9 @@ Therefore, we return [[1,7],[2,4],[7,1]].
 ## Solution
 
 **Language:** C++  
-**Runtime:** 7 ms (beats 48.86%)  
-**Memory:** 21.9 MB (beats 9.28%)  
-**Submitted:** 2026-08-12T17:21:24.787Z  
+**Runtime:** 20 ms (beats 5.48%)  
+**Memory:** 21.8 MB (beats 14.46%)  
+**Submitted:** 2026-08-12T17:23:21.238Z  
 
 ```cpp
 class Solution {
@@ -76,24 +76,23 @@ public:
     vector<vector<int>> mergeSimilarItems(vector<vector<int>>& items1,
                                            vector<vector<int>>& items2) {
 
-        map<int, int> mp;
+        unordered_map<int, int> mp;
 
-        // Add items from items1
         for (auto item : items1) {
             mp[item[0]] += item[1];
         }
 
-        // Add items from items2
         for (auto item : items2) {
             mp[item[0]] += item[1];
         }
 
-        // Convert map into answer
         vector<vector<int>> ans;
 
-        for (auto it : mp) {
-            ans.push_back({it.first, it.second});
+        for (auto item : mp) {
+            ans.push_back({item.first, item.second});
         }
+
+        sort(ans.begin(), ans.end());
 
         return ans;
     }
