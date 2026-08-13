@@ -66,9 +66,9 @@ Therefore, we return [[1,7],[2,4],[7,1]].
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.7 MB  
-**Submitted:** 2026-08-12T17:23:37.380Z  
+**Runtime:** 4 ms (beats 69.71%)  
+**Memory:** 21.2 MB (beats 31.20%)  
+**Submitted:** 2026-08-12T17:23:44.509Z  
 
 ```cpp
 class Solution {
