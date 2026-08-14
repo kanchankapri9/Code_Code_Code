@@ -21,3 +21,4 @@ public:
 
 // capare as old one , ut this  array is sorted ? why sorted array helps to minimize the time?
 // let s see
+// done
