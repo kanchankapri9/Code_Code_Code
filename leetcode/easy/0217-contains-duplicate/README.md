@@ -44,9 +44,9 @@ All elements are distinct.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 15 ms (beats 99.17%)  
-**Memory:** 82.8 MB (beats 86.83%)  
-**Submitted:** 2026-08-14T17:43:53.857Z  
+**Runtime:** 24 ms (beats 89.83%)  
+**Memory:** 82.9 MB (beats 77.18%)  
+**Submitted:** 2026-08-14T17:44:09.963Z  
 
 ```cpp
 class Solution {
@@ -72,6 +72,7 @@ public:
 
 // capare as old one , ut this  array is sorted ? why sorted array helps to minimize the time?
 // let s see
+// done
 ```
 
 ---
