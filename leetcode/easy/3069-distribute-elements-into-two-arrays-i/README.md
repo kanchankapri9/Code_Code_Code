@@ -52,9 +52,9 @@ Hence, the array result formed by concatenation is [5,3,4,8].
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.7 MB (beats 83.63%)  
-**Submitted:** 2026-08-20T18:29:25.908Z  
+**Runtime:** 3 ms (beats 23.77%)  
+**Memory:** 23.8 MB (beats 83.63%)  
+**Submitted:** 2026-08-20T18:29:40.329Z  
 
 ```cpp
 class Solution {
