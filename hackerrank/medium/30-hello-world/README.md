@@ -31,7 +31,7 @@ Print `Hello, World.` on the first line, and the contents of $inputString$ on th
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-22T18:57:40.433Z  
+**Submitted:** 2026-08-22T18:59:18.898Z  
 
 ```cpp
 
