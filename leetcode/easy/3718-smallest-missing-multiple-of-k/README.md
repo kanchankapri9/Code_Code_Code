@@ -41,9 +41,9 @@ The multiples of `k = 5` are 5, 10, 15, 20... and the smallest multiple missing 
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 24 MB (beats 82.33%)  
-**Submitted:** 2026-08-25T18:17:31.011Z  
+**Runtime:** 1 ms (beats 47.29%)  
+**Memory:** 24.1 MB (beats 82.33%)  
+**Submitted:** 2026-08-25T18:18:57.904Z  
 
 ```cpp
 class Solution {
