@@ -4,7 +4,7 @@
 
 ## Problem
 
-Given an array of integers `nums` and an integer `target`, return  *indices of the two numbers such that they add up to `target`*.
+You are given an array of integers `nums` and an integer `target`, return  *indices of the two numbers such that they add up to `target`*.
 
 You may assume that each input would have  ***exactly *one solution**, and you may not use the* same* element twice.
 
@@ -53,9 +53,9 @@ Output: [0,1]
 ## Solution
 
 **Language:** Java  
-**Runtime:** 39 ms (beats 36.88%)  
-**Memory:** 47.1 MB (beats 58.97%)  
-**Submitted:** 2026-07-27T17:15:17.043Z  
+**Runtime:** 38 ms (beats 42.26%)  
+**Memory:** 46.9 MB (beats 74.42%)  
+**Submitted:** 2026-09-04T18:45:31.888Z  
 
 ```java
 class Solution {
