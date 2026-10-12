@@ -7,8 +7,9 @@ class Solution {
         for( int j = i+1; j<n; j++) {
             if( nums[i] != nums[j]) {
                 nums[i+1] = nums[j];
+                i++;
             }
-
+        //   i++;
         }
         return i + 1; 
     }
