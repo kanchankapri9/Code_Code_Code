@@ -39,30 +39,31 @@ Output: [0]
 
 ## Solution
 
-**Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 23.8 MB (beats 56.59%)  
-**Submitted:** 2026-07-26T05:54:35.911Z  
+**Language:** Java  
+**Runtime:** 2 ms (beats 91.51%)  
+**Memory:** 47.9 MB (beats 37.62%)  
+**Submitted:** 2026-10-12T11:46:23.940Z  
 
-```cpp
+```java
 class Solution {
-public:
-    void moveZeroes(vector<int>& nums) {
-        int next = 0; // pointer to track position for next non-zero
-
-        for (int i = 0; i < nums.size(); i++) {
-            if (nums[i] != 0) {
-                swap(nums[next], nums[i]);
-               next++;         
-            }
+    public void moveZeroes(int[] nums) {
+        int i = 0;
+        while ( i < nums.length && nums[i] != 0) {
+            i++;
         }
 
-        // while(next < nums.size()) {
-        //   nums[next] = 0;   // next at the index of 3 where non zero ending now will have 0
-        //   next++;
-        // }
-    }
-};
+        for ( int j = i + 1; j<nums.length; j++) {
+            if(nums[j] != 0) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+            
+
+            i++;
+        }
+        }
+}
+}
 ```
 
 ---
