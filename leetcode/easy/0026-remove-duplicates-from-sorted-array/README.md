@@ -62,9 +62,9 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.9 MB  
-**Submitted:** 2026-10-12T16:26:31.905Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 46.6 MB (beats 80.13%)  
+**Submitted:** 2026-10-12T16:29:13.676Z  
 
 ```java
 class Solution {
@@ -76,8 +76,9 @@ class Solution {
         for( int j = i+1; j<n; j++) {
             if( nums[i] != nums[j]) {
                 nums[i+1] = nums[j];
+                i++;
             }
-
+        //   i++;
         }
         return i + 1; 
     }
